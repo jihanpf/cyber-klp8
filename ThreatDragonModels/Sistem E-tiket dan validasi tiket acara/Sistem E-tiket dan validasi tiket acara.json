@@ -5,7 +5,7 @@
   "summary": {
     "title": "Sistem E-tiket dan validasi tiket acara",
     "owner": "Kelompok 8",
-    "description": "Thrust modeling sistem login dan profil mahsiswa berbasis web",
+    "description": "pemodelan sistem tiket  dan validasi e - tiket secara web mencakup registrasi, penerbitan tiket qr, pemindaian di pintu, pembaruan status check in dan dashboard",
     "id": 0
   },
   "detail": {
