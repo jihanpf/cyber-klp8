@@ -40,8 +40,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "6711a91c-c30b-4ea8-8c22-de38bbefe793",
             "zIndex": -1,
+            "id": "6711a91c-c30b-4ea8-8c22-de38bbefe793",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "",
@@ -80,8 +80,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c",
             "zIndex": -1,
+            "id": "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "",
@@ -117,13 +117,14 @@
                 "text": "Petugas Pintu"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -207,7 +208,6 @@
               ]
             },
             "id": "73c38f57-707f-4de9-9476-3f1aab562467",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Petugas Pintu",
@@ -215,9 +215,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a1945509-b7b7-45fe-88b0-ba7525b191b5",
+                  "title": "Pemalsuan identitas petugas dengan kredensial bocor",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika penyerang dapat memakai kredensial petugas yang bocor untuk login ke Aplikasi pemindai, maka ia bisa memvalidasi atau menolak tiket secara tidak sah. Asumsi: login hanya memakai username dan password tanpa MFA.",
+                  "mitigation": "MFA untuk petugas, masa berlaku sesi singkat, kunci akun setelah login gagal berulang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -234,13 +252,14 @@
                 "text": "Admin Acara"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -324,7 +343,6 @@
               ]
             },
             "id": "e1ac7231-8807-44a8-a8b0-e353311da6f0",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Admin Acara",
@@ -332,9 +350,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "f8961aa0-f47e-4637-a262-7dac8da44787",
+                  "title": "Pengambilalihan akun admin acara",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika penyerang dapat menebak atau mencuri kata sandi admin, maka ia bisa login ke Dashboard web dan melihat data kehadiran. Asumsi: kata sandi lemah dan tanpa MFA.",
+                  "mitigation": "MFA, kebijakan kata sandi kuat, notifikasi login dari perangkat baru.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -351,13 +387,14 @@
                 "text": "Peserta"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -441,7 +478,6 @@
               ]
             },
             "id": "5443c8ab-5db6-4aad-8ebd-c4326e4cf6ae",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Peserta",
@@ -449,9 +485,53 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "fce02772-f6fd-42bc-9a23-69bed21eda3a",
+                  "title": "manipulasi data form registrasi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Jika penyerang dapat mengubah isi form (misalnya ID acara atau jumlah tiket) saat dikirim ke Portal web, maka tiket bisa terbit untuk acara atau jumlah yang tidak semestinya. Asumsi: validasi hanya dilakukan di sisi browser.",
+                  "mitigation": "Validasi ulang semua input di server, gunakan HTTPS, tentukan acara dan jumlah tiket dari sisi server.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "37a0c2c0-b717-4fe8-b4a5-16e2d15856bf",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "86289848-515d-4f00-8aa6-74ec13fbad90",
+                  "title": "QR tiket difoto atau dibagikan ke orang lain",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika orang lain dapat memotret atau menerima salinan QR tiket peserta, maka ia bisa check-in lebih dulu dan peserta asli ditolak. Asumsi: QR berlaku statis dan satu tiket hanya bisa dipakai sekali.",
+                  "mitigation": "QR berisi ID acak (tanpa data pribadi), status sekali pakai, pertimbangkan QR yang berubah berkala dan cek identitas manual.\n\n14. Alur 9: App pemindai → Backend tiket",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -468,13 +548,14 @@
                 "text": "pirtal \nweb"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -558,7 +639,6 @@
               ]
             },
             "id": "56422b45-b697-4bbf-8e06-1337188bd1a0",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "pirtal \nweb",
@@ -566,12 +646,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "cae62148-624e-4078-847c-e83e00ba09ff",
+                  "title": "Registrasi massal palsu melalui form registrasi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Jika penyerang dapat mengirim form registrasi berulang-ulang secara otomatis pada Portal web, maka kuota tiket habis oleh data palsu dan peserta sah tidak bisa mendaftar. Asumsi: form registrasi tidak memakai CAPTCHA atau pembatasan jumlah permintaan.",
+                  "mitigation": "Rate limiting per IP, CAPTCHA, verifikasi email sebelum tiket diterbitkan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "567197b8-bcc6-42a7-9907-fbe4ffa12f59",
+                  "title": "Akses tiket peserta lain lewat ID tiket yang ditebak",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Jika penyerang dapat mengubah ID tiket pada alamat halaman tiket di Portal web, maka ia bisa melihat QR dan data peserta lain. Asumsi: ID tiket berurutan dan akses tidak dicek terhadap pemilik.",
+                  "mitigation": "ID acak (UUID), cek kepemilikan tiket di server, wajib login untuk melihat tiket.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             },
             "children": [
               "e8a5851d-1f3e-4460-9a9b-912fb2862d74"
@@ -624,7 +739,12 @@
               "cell": "56422b45-b697-4bbf-8e06-1337188bd1a0",
               "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 80,
+                "y": 697
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1316,13 +1436,14 @@
                 "text": "app\npemindai"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1406,7 +1527,6 @@
               ]
             },
             "id": "e41fdd5c-30a9-43ff-8627-09ed09558011",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "app\npemindai",
@@ -1414,12 +1534,60 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a7aa02fb-4357-4e51-926e-745b19328976",
+                  "title": "Aplikasi pemindai dimodifikasi atau ditiru",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat memodifikasi atau memasang versi palsu App pemindai di perangkat, maka hasil pemindaian bisa dimanipulasi atau kredensial petugas dicuri. Asumsi: aplikasi dipasang di perangkat yang tidak dikontrol penuh.",
+                  "mitigation": "Distribusi hanya dari sumber resmi, perangkat terkelola, backend tetap memvalidasi semua keputusan.\n\n7. App pemindai",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "9f37d458-ea53-4750-a832-9d566f1dc849",
+                  "title": "Petugas menyangkal telah memindai tiket",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Jika pemindaian tidak dicatat dengan identitas petugas dan waktu, maka sengketa tiket ganda tidak bisa dibuktikan. Asumsi: log hanya mencatat status tiket.",
+                  "mitigation": "Catat ID tiket, ID petugas, pintu, dan waktu di setiap pemindaian; log tidak bisa diubah.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "2f955f27-7553-4541-a3f1-9f6e7b91235e",
+                  "title": "Replay permintaan validasi yang disadap",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat menyadap lalu mengirim ulang atau mengubah permintaan (ID tiket + sesi petugas) ke Backend, maka tiket bisa divalidasi tidak sah. Asumsi: tidak ada token unik per permintaan.",
+                  "mitigation": "TLS, token sesi bertanda waktu, tolak tiket yang sudah check-in.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1490,13 +1658,14 @@
                 "text": "dashboard\nweb"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1580,7 +1749,6 @@
               ]
             },
             "id": "e7ca7317-da6a-48f1-805a-19a3dc7fd4fe",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "dashboard\nweb",
@@ -1588,12 +1756,73 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "7b65468c-4d20-4c10-bd4f-11fef296e1af",
+                  "title": "Akses dashboard tanpa login admin",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika penyerang dapat membuka alamat Dashboard web tanpa melalui autentikasi atau memakai sesi admin yang dicuri, maka ia bisa melihat daftar status tiket dan jumlah check-in. Asumsi: sesi admin tidak punya batas waktu dan cookie sesi tidak diamankan.",
+                  "mitigation": "Wajib login dan MFA admin, cookie sesi dengan flag Secure dan HttpOnly, masa berlaku sesi singkat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "92948956-28b8-4f15-a624-fb17c4801330",
+                  "title": "Peserta atau petugas melihat data yang bukan haknya",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Jika pengguna non-admin dapat mengakses halaman atau endpoint dashboard dengan mengubah alamat atau parameter, maka ia bisa melihat data seluruh peserta. Asumsi: otorisasi hanya menyembunyikan menu, tidak memeriksa peran di server.",
+                  "mitigation": "Kontrol akses berbasis peran di server untuk setiap halaman dan endpoint dashboard.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "ef649a70-24b9-42ed-9720-a84b6c84e440",
+                  "title": "Injeksi skrip lewat data peserta yang ditampilkan",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat mengisi nama atau data registrasi dengan skrip berbahaya, maka skrip itu berjalan di browser admin saat daftar peserta ditampilkan di dashboard dan bisa mencuri sesi admin. Asumsi: data peserta ditampilkan tanpa di-escape.",
+                  "mitigation": "Escape atau sanitasi semua data sebelum ditampilkan, Content Security Policy, validasi input di Portal web.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "8cea5116-c743-48dd-bbb4-a7e0fb7d1543",
+                  "title": "Dashboard lambat atau tidak bisa diakses saat acara berlangsung",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Jika penyerang atau banyak permintaan sekaligus membebani Dashboard web, maka admin tidak bisa memantau jumlah check-in. Asumsi: dashboard memakai server yang sama dengan Backend tiket.",
+                  "mitigation": "Rate limiting, cache ringkasan data, pisahkan beban dashboard dari proses validasi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -1610,13 +1839,14 @@
                 "text": "backend \ntiket"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1700,7 +1930,6 @@
               ]
             },
             "id": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "backend \ntiket",
@@ -1708,12 +1937,86 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "1018e47b-23b6-453f-be71-5b5ab782d82a",
+                  "title": "Tiket lolos dua kali oleh pemindaian paralel",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika dua petugas di pintu berbeda memindai QR yang sama hampir bersamaan, maka tiket bisa lolos dua kali sebelum status berubah. Asumsi: cek dan update status tidak dalam satu transaksi atomik.",
+                  "mitigation": "Transaksi atomik atau penguncian baris, status check-in unik per tiket.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "aa0c160f-4a89-4028-aef1-8ae594f25f26",
+                  "title": "Peserta mengakses fungsi petugas atau admin",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Jika peserta dapat memanggil endpoint validasi atau dashboard dengan sesi tanpa hak akses, maka ia bisa mengubah status tiket atau melihat data kehadiran. Asumsi: otorisasi hanya dicek di antarmuka.",
+                  "mitigation": "Kontrol akses berbasis peran di server untuk setiap endpoint.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "0eb7b348-3fa1-4b7d-b341-0f5530bbffd1",
+                  "title": "Backend kewalahan saat banyak pintu memindai bersamaan",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Jika penyerang membanjiri Backend tiket dengan permintaan validasi saat acara berlangsung, maka pintu masuk berhenti melayani peserta. Asumsi: tidak ada pembatasan permintaan per sesi petugas.",
+                  "mitigation": "Rate limiting, autentikasi sebelum diproses, kapasitas cadangan, mode darurat check-in manual yang tercatat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "d7bb7342-1f8b-46f9-b5ff-87693f638ce0",
+                  "title": ": Pemalsuan hasil validasi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat mengubah respons di jalur jaringan, maka tiket yang ditolak tampak valid di layar petugas. Asumsi: respons tidak ditandatangani dan tidak memakai TLS.",
+                  "mitigation": "TLS, tanda tangan pada respons, tampilkan data peserta untuk verifikasi manual.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "1c60c6fa-993a-4413-8177-009d34e3a0c0",
+                  "title": "SQL injection pada query tiket",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat menyisipkan perintah SQL lewat ID tiket atau data registrasi, maka status check-in atau data peserta bisa diubah atau dibaca. Asumsi: query dibuat dengan penggabungan string.",
+                  "mitigation": "Prepared statement atau ORM, validasi input, akun database berhak minimum.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 3,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -1730,16 +2033,19 @@
                 "text": "database\ntiket"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1823,7 +2129,6 @@
               ]
             },
             "id": "d3990b05-1d48-4182-826a-26fabae3d992",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "database\ntiket",
@@ -1831,13 +2136,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "bf207ec2-ede2-4e8e-8d82-606b05291992",
+                  "title": "Kebocoran data peserta dari database",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Jika pihak tidak berwenang dapat membaca isi database (backup atau akses langsung), maka identitas peserta dan ID tiket terbuka. Asumsi: data tidak dienkripsi dan akses tidak dibatasi.",
+                  "mitigation": "Enkripsi data tersimpan, akses hanya dari Backend tiket, enkripsi backup.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "ab6a6d5b-a2a0-4e15-a869-696ac21b2f60",
+                  "title": "Status check-in diubah langsung di database",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika pihak internal atau penyerang dapat mengubah kolom status langsung di database, maka tiket bisa dibuat tampak belum atau sudah dipakai. Asumsi: tidak ada audit log perubahan.",
+                  "mitigation": "Audit log perubahan, pembatasan akses tulis hanya untuk backend.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1856,8 +2194,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "8c0fc14d-de2a-414f-a3a8-7e5f99bb316b",
             "zIndex": 16,
+            "id": "8c0fc14d-de2a-414f-a3a8-7e5f99bb316b",
             "data": {
               "type": "tm.Text",
               "name": "TB 1: perangkat ke portal",
@@ -1880,8 +2218,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "ebdc6c72-29d0-4e7c-b1b6-b5ae43e8888b",
             "zIndex": 17,
+            "id": "ebdc6c72-29d0-4e7c-b1b6-b5ae43e8888b",
             "data": {
               "type": "tm.Text",
               "name": "TB 2: aplikasi ke backend",
@@ -1904,8 +2242,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "41b06664-5cea-466d-9bd5-6af7bdf48e1a",
             "zIndex": 18,
+            "id": "41b06664-5cea-466d-9bd5-6af7bdf48e1a",
             "data": {
               "type": "tm.Text",
               "name": "TB 3: backend ke database",
@@ -1917,6 +2255,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Dosen pendidikan",
-    "threatTop": 0
+    "threatTop": 21
   }
 }
