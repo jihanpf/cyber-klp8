@@ -2251,9 +2251,2240 @@
             }
           }
         ]
+      },
+      {
+        "id": 2,
+        "title": "DFD level 1 - E-Ticket",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [
+          {
+            "position": {
+              "x": -70.00000000000415,
+              "y": 520.000000000002
+            },
+            "size": {
+              "width": 300,
+              "height": 540
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "6711a91c-c30b-4ea8-8c22-de38bbefe793",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "2c1bfc77-c450-4cc7-b1d0-b2361452340a",
+                "9fc870bd-441f-45b0-82ed-deada4756f24",
+                "b6c0dd0e-526b-48a3-97cd-f3697a1e23f8",
+                "53127c66-4332-4f5a-b34d-3ec4ba7772ee",
+                "5457ec00-a5d3-4426-b3b1-e86833b36407",
+                "c94fa0c5-76af-4cb1-a282-7b6b25cbf932",
+                "c927c947-27e2-4582-84cc-8f125d6d988b",
+                "16a20e2d-9604-464f-80d2-a8336eea3098",
+                "541b1b65-b064-44cc-b489-ab5d0e6de3ca",
+                "043e249a-3c70-4b5b-8757-0e19c97cc46c",
+                "1984b229-8c33-4313-83ea-4d1cdd5411e9",
+                "be25b586-2eeb-4179-b397-d297a719057a"
+              ],
+              "containedElements": [
+                "56422b45-b697-4bbf-8e06-1337188bd1a0",
+                "e41fdd5c-30a9-43ff-8627-09ed09558011",
+                "e7ca7317-da6a-48f1-805a-19a3dc7fd4fe"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 229.99999999999648,
+              "y": 520.0000000000027
+            },
+            "size": {
+              "width": 330,
+              "height": 540
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "c94fa0c5-76af-4cb1-a282-7b6b25cbf932",
+                "c927c947-27e2-4582-84cc-8f125d6d988b",
+                "16a20e2d-9604-464f-80d2-a8336eea3098",
+                "541b1b65-b064-44cc-b489-ab5d0e6de3ca",
+                "043e249a-3c70-4b5b-8757-0e19c97cc46c",
+                "1984b229-8c33-4313-83ea-4d1cdd5411e9",
+                "6acc9e82-a493-47de-8432-65a53f219f56",
+                "9c7c11f1-e4a2-4bc9-9ca2-0ae06e7c986e"
+              ],
+              "containedElements": [
+                "8dcf7ee0-1689-4fce-9702-2c94d6d57815"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -220,
+              "y": 758
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Petugas Pintu"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1c697e1f-8287-4fb6-bd75-0cd061f00c59"
+                },
+                {
+                  "group": "right",
+                  "id": "92cde27d-00bc-4835-b546-56136c963125"
+                },
+                {
+                  "group": "bottom",
+                  "id": "972ed7d1-e61a-4382-8160-bda41586c0d0"
+                },
+                {
+                  "group": "left",
+                  "id": "503868b7-4f40-4a5a-af2b-29037da1761b"
+                }
+              ]
+            },
+            "id": "73c38f57-707f-4de9-9476-3f1aab562467",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Petugas Pintu",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "a1945509-b7b7-45fe-88b0-ba7525b191b5",
+                  "title": "Pemalsuan identitas petugas dengan kredensial bocor",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika penyerang dapat memakai kredensial petugas yang bocor untuk login ke Aplikasi pemindai, maka ia bisa memvalidasi atau menolak tiket secara tidak sah. Asumsi: login hanya memakai username dan password tanpa MFA.",
+                  "mitigation": "MFA untuk petugas, masa berlaku sesi singkat, kunci akun setelah login gagal berulang.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": -220,
+              "y": 868
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Admin Acara"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 3,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1c697e1f-8287-4fb6-bd75-0cd061f00c59"
+                },
+                {
+                  "group": "right",
+                  "id": "92cde27d-00bc-4835-b546-56136c963125"
+                },
+                {
+                  "group": "bottom",
+                  "id": "972ed7d1-e61a-4382-8160-bda41586c0d0"
+                },
+                {
+                  "group": "left",
+                  "id": "503868b7-4f40-4a5a-af2b-29037da1761b"
+                }
+              ]
+            },
+            "id": "e1ac7231-8807-44a8-a8b0-e353311da6f0",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Admin Acara",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "f8961aa0-f47e-4637-a262-7dac8da44787",
+                  "title": "Pengambilalihan akun admin acara",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika penyerang dapat menebak atau mencuri kata sandi admin, maka ia bisa login ke Dashboard web dan melihat data kehadiran. Asumsi: kata sandi lemah dan tanpa MFA.",
+                  "mitigation": "MFA, kebijakan kata sandi kuat, notifikasi login dari perangkat baru.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": -220,
+              "y": 667
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Peserta"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 4,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1c697e1f-8287-4fb6-bd75-0cd061f00c59"
+                },
+                {
+                  "group": "right",
+                  "id": "92cde27d-00bc-4835-b546-56136c963125"
+                },
+                {
+                  "group": "bottom",
+                  "id": "972ed7d1-e61a-4382-8160-bda41586c0d0"
+                },
+                {
+                  "group": "left",
+                  "id": "503868b7-4f40-4a5a-af2b-29037da1761b"
+                }
+              ]
+            },
+            "id": "5443c8ab-5db6-4aad-8ebd-c4326e4cf6ae",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Peserta",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "fce02772-f6fd-42bc-9a23-69bed21eda3a",
+                  "title": "manipulasi data form registrasi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Jika penyerang dapat mengubah isi form (misalnya ID acara atau jumlah tiket) saat dikirim ke Portal web, maka tiket bisa terbit untuk acara atau jumlah yang tidak semestinya. Asumsi: validasi hanya dilakukan di sisi browser.",
+                  "mitigation": "Validasi ulang semua input di server, gunakan HTTPS, tentukan acara dan jumlah tiket dari sisi server.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "37a0c2c0-b717-4fe8-b4a5-16e2d15856bf",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "86289848-515d-4f00-8aa6-74ec13fbad90",
+                  "title": "QR tiket difoto atau dibagikan ke orang lain",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika orang lain dapat memotret atau menerima salinan QR tiket peserta, maka ia bisa check-in lebih dulu dan peserta asli ditolak. Asumsi: QR berlaku statis dan satu tiket hanya bisa dipakai sekali.",
+                  "mitigation": "QR berisi ID acak (tanpa data pribadi), status sekali pakai, pertimbangkan QR yang berubah berkala dan cek identitas manual.\n\n14. Alur 9: App pemindai → Backend tiket",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 120,
+              "y": 667
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "pirtal \nweb"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 6,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53b98767-0dbf-40b2-acf3-3270b9d421ce"
+                },
+                {
+                  "group": "right",
+                  "id": "fa4febe9-4949-4171-b676-331a39d1a935"
+                },
+                {
+                  "group": "bottom",
+                  "id": "245ea4a8-c911-4d03-a503-3999e51bd017"
+                },
+                {
+                  "group": "left",
+                  "id": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+                }
+              ]
+            },
+            "id": "56422b45-b697-4bbf-8e06-1337188bd1a0",
+            "data": {
+              "type": "tm.Process",
+              "name": "pirtal \nweb",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "cae62148-624e-4078-847c-e83e00ba09ff",
+                  "title": "Registrasi massal palsu melalui form registrasi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Jika penyerang dapat mengirim form registrasi berulang-ulang secara otomatis pada Portal web, maka kuota tiket habis oleh data palsu dan peserta sah tidak bisa mendaftar. Asumsi: form registrasi tidak memakai CAPTCHA atau pembatasan jumlah permintaan.",
+                  "mitigation": "Rate limiting per IP, CAPTCHA, verifikasi email sebelum tiket diterbitkan.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "567197b8-bcc6-42a7-9907-fbe4ffa12f59",
+                  "title": "Akses tiket peserta lain lewat ID tiket yang ditebak",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Jika penyerang dapat mengubah ID tiket pada alamat halaman tiket di Portal web, maka ia bisa melihat QR dan data peserta lain. Asumsi: ID tiket berurutan dan akses tidak dicek terhadap pemilik.",
+                  "mitigation": "ID acak (UUID), cek kepemilikan tiket di server, wajib login untuk melihat tiket.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "children": [
+              "e8a5851d-1f3e-4460-9a9b-912fb2862d74"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1. from registrasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793"
+              ]
+            },
+            "labels": [
+              "1. from registrasi"
+            ],
+            "id": "2c1bfc77-c450-4cc7-b1d0-b2361452340a",
+            "source": {
+              "cell": "5443c8ab-5db6-4aad-8ebd-c4326e4cf6ae",
+              "port": "92cde27d-00bc-4835-b546-56136c963125"
+            },
+            "target": {
+              "cell": "56422b45-b697-4bbf-8e06-1337188bd1a0",
+              "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+            },
+            "vertices": [
+              {
+                "x": 80,
+                "y": 697
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "77a4815c-d120-4d06-9e0e-c292695a6833",
+            "source": {
+              "cell": "e41fdd5c-30a9-43ff-8627-09ed09558011",
+              "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+            },
+            "target": {
+              "cell": "e41fdd5c-30a9-43ff-8627-09ed09558011",
+              "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+            },
+            "vertices": [
+              {
+                "x": -100,
+                "y": 700
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "12 login petugas",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793"
+              ]
+            },
+            "labels": [
+              "12 login petugas"
+            ],
+            "id": "9fc870bd-441f-45b0-82ed-deada4756f24",
+            "source": {
+              "cell": "73c38f57-707f-4de9-9476-3f1aab562467",
+              "port": "92cde27d-00bc-4835-b546-56136c963125"
+            },
+            "target": {
+              "cell": "e41fdd5c-30a9-43ff-8627-09ed09558011",
+              "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "13 hasil validasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793"
+              ]
+            },
+            "labels": [
+              "13 hasil validasi"
+            ],
+            "id": "b6c0dd0e-526b-48a3-97cd-f3697a1e23f8",
+            "source": {
+              "cell": "e41fdd5c-30a9-43ff-8627-09ed09558011",
+              "port": "245ea4a8-c911-4d03-a503-3999e51bd017"
+            },
+            "target": {
+              "cell": "73c38f57-707f-4de9-9476-3f1aab562467",
+              "port": "92cde27d-00bc-4835-b546-56136c963125"
+            },
+            "vertices": [
+              {
+                "x": 80,
+                "y": 878
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "14 login admin",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793"
+              ]
+            },
+            "labels": [
+              "14 login admin"
+            ],
+            "id": "53127c66-4332-4f5a-b34d-3ec4ba7772ee",
+            "source": {
+              "cell": "e1ac7231-8807-44a8-a8b0-e353311da6f0",
+              "port": "92cde27d-00bc-4835-b546-56136c963125"
+            },
+            "target": {
+              "cell": "e7ca7317-da6a-48f1-805a-19a3dc7fd4fe",
+              "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "15 tampilan dashboard",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793"
+              ]
+            },
+            "labels": [
+              "15 tampilan dashboard"
+            ],
+            "id": "5457ec00-a5d3-4426-b3b1-e86833b36407",
+            "source": {
+              "cell": "e7ca7317-da6a-48f1-805a-19a3dc7fd4fe",
+              "port": "245ea4a8-c911-4d03-a503-3999e51bd017"
+            },
+            "target": {
+              "cell": "e1ac7231-8807-44a8-a8b0-e353311da6f0",
+              "port": "92cde27d-00bc-4835-b546-56136c963125"
+            },
+            "vertices": [
+              {
+                "x": 0,
+                "y": 990
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "3 data registrasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793",
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "3 data registrasi"
+            ],
+            "id": "c94fa0c5-76af-4cb1-a282-7b6b25cbf932",
+            "source": {
+              "cell": "56422b45-b697-4bbf-8e06-1337188bd1a0",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "target": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "4 tiket QR + status",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793",
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "4 tiket QR + status"
+            ],
+            "id": "c927c947-27e2-4582-84cc-8f125d6d988b",
+            "source": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "53b98767-0dbf-40b2-acf3-3270b9d421ce"
+            },
+            "target": {
+              "cell": "56422b45-b697-4bbf-8e06-1337188bd1a0",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "vertices": [
+              {
+                "x": 360,
+                "y": 720
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "9 ID tiket + sesi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793",
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "9 ID tiket + sesi"
+            ],
+            "id": "16a20e2d-9604-464f-80d2-a8336eea3098",
+            "source": {
+              "cell": "e41fdd5c-30a9-43ff-8627-09ed09558011",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "target": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "10 hasil validasi",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793",
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "10 hasil validasi"
+            ],
+            "id": "541b1b65-b064-44cc-b489-ab5d0e6de3ca",
+            "source": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "245ea4a8-c911-4d03-a503-3999e51bd017"
+            },
+            "target": {
+              "cell": "e41fdd5c-30a9-43ff-8627-09ed09558011",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "vertices": [
+              {
+                "x": 310,
+                "y": 878
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "5 query check in",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793",
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "5 query check in"
+            ],
+            "id": "043e249a-3c70-4b5b-8757-0e19c97cc46c",
+            "source": {
+              "cell": "e7ca7317-da6a-48f1-805a-19a3dc7fd4fe",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "target": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "245ea4a8-c911-4d03-a503-3999e51bd017"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "6 ringkasan status",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793",
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "6 ringkasan status"
+            ],
+            "id": "1984b229-8c33-4313-83ea-4d1cdd5411e9",
+            "source": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "target": {
+              "cell": "e7ca7317-da6a-48f1-805a-19a3dc7fd4fe",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "vertices": [
+              {
+                "x": 400,
+                "y": 960
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "7 simpan data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "7 simpan data"
+            ],
+            "id": "6acc9e82-a493-47de-8432-65a53f219f56",
+            "source": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "target": {
+              "cell": "d3990b05-1d48-4182-826a-26fabae3d992",
+              "port": "11a615b1-8216-42e5-9a6b-fb33a1a09e33"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "8 baca status",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "fae9e6aa-fd84-4953-90c8-b402f2bf5d4c"
+              ]
+            },
+            "labels": [
+              "8 baca status"
+            ],
+            "id": "9c7c11f1-e4a2-4bc9-9ca2-0ae06e7c986e",
+            "source": {
+              "cell": "d3990b05-1d48-4182-826a-26fabae3d992",
+              "port": "a3c46b31-26b2-4124-a688-caf4efd5e800"
+            },
+            "target": {
+              "cell": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+              "port": "fa4febe9-4949-4171-b676-331a39d1a935"
+            },
+            "vertices": [
+              {
+                "x": 630,
+                "y": 888
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 130,
+              "y": 818
+            },
+            "size": {
+              "width": 80,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "app\npemindai"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 11,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53b98767-0dbf-40b2-acf3-3270b9d421ce"
+                },
+                {
+                  "group": "right",
+                  "id": "fa4febe9-4949-4171-b676-331a39d1a935"
+                },
+                {
+                  "group": "bottom",
+                  "id": "245ea4a8-c911-4d03-a503-3999e51bd017"
+                },
+                {
+                  "group": "left",
+                  "id": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+                }
+              ]
+            },
+            "id": "e41fdd5c-30a9-43ff-8627-09ed09558011",
+            "data": {
+              "type": "tm.Process",
+              "name": "app\npemindai",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "a7aa02fb-4357-4e51-926e-745b19328976",
+                  "title": "Aplikasi pemindai dimodifikasi atau ditiru",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat memodifikasi atau memasang versi palsu App pemindai di perangkat, maka hasil pemindaian bisa dimanipulasi atau kredensial petugas dicuri. Asumsi: aplikasi dipasang di perangkat yang tidak dikontrol penuh.",
+                  "mitigation": "Distribusi hanya dari sumber resmi, perangkat terkelola, backend tetap memvalidasi semua keputusan.\n\n7. App pemindai",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "9f37d458-ea53-4750-a832-9d566f1dc849",
+                  "title": "Petugas menyangkal telah memindai tiket",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Jika pemindaian tidak dicatat dengan identitas petugas dan waktu, maka sengketa tiket ganda tidak bisa dibuktikan. Asumsi: log hanya mencatat status tiket.",
+                  "mitigation": "Catat ID tiket, ID petugas, pintu, dan waktu di setiap pemindaian; log tidak bisa diubah.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "2f955f27-7553-4541-a3f1-9f6e7b91235e",
+                  "title": "Replay permintaan validasi yang disadap",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat menyadap lalu mengirim ulang atau mengubah permintaan (ID tiket + sesi petugas) ke Backend, maka tiket bisa divalidasi tidak sah. Asumsi: tidak ada token unik per permintaan.",
+                  "mitigation": "TLS, token sesi bertanda waktu, tolak tiket yang sudah check-in.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2. tiket QR",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "6711a91c-c30b-4ea8-8c22-de38bbefe793"
+              ]
+            },
+            "labels": [
+              "2. tiket QR"
+            ],
+            "id": "be25b586-2eeb-4179-b397-d297a719057a",
+            "source": {
+              "cell": "56422b45-b697-4bbf-8e06-1337188bd1a0",
+              "port": "245ea4a8-c911-4d03-a503-3999e51bd017"
+            },
+            "target": {
+              "cell": "5443c8ab-5db6-4aad-8ebd-c4326e4cf6ae",
+              "port": "92cde27d-00bc-4835-b546-56136c963125"
+            },
+            "vertices": [
+              {
+                "x": -20,
+                "y": 727
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 130,
+              "y": 957
+            },
+            "size": {
+              "width": 90,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "dashboard\nweb"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 13,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53b98767-0dbf-40b2-acf3-3270b9d421ce"
+                },
+                {
+                  "group": "right",
+                  "id": "fa4febe9-4949-4171-b676-331a39d1a935"
+                },
+                {
+                  "group": "bottom",
+                  "id": "245ea4a8-c911-4d03-a503-3999e51bd017"
+                },
+                {
+                  "group": "left",
+                  "id": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+                }
+              ]
+            },
+            "id": "e7ca7317-da6a-48f1-805a-19a3dc7fd4fe",
+            "data": {
+              "type": "tm.Process",
+              "name": "dashboard\nweb",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "7b65468c-4d20-4c10-bd4f-11fef296e1af",
+                  "title": "Akses dashboard tanpa login admin",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Jika penyerang dapat membuka alamat Dashboard web tanpa melalui autentikasi atau memakai sesi admin yang dicuri, maka ia bisa melihat daftar status tiket dan jumlah check-in. Asumsi: sesi admin tidak punya batas waktu dan cookie sesi tidak diamankan.",
+                  "mitigation": "Wajib login dan MFA admin, cookie sesi dengan flag Secure dan HttpOnly, masa berlaku sesi singkat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
+                },
+                {
+                  "id": "92948956-28b8-4f15-a624-fb17c4801330",
+                  "title": "Peserta atau petugas melihat data yang bukan haknya",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Jika pengguna non-admin dapat mengakses halaman atau endpoint dashboard dengan mengubah alamat atau parameter, maka ia bisa melihat data seluruh peserta. Asumsi: otorisasi hanya menyembunyikan menu, tidak memeriksa peran di server.",
+                  "mitigation": "Kontrol akses berbasis peran di server untuk setiap halaman dan endpoint dashboard.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": ""
+                },
+                {
+                  "id": "ef649a70-24b9-42ed-9720-a84b6c84e440",
+                  "title": "Injeksi skrip lewat data peserta yang ditampilkan",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat mengisi nama atau data registrasi dengan skrip berbahaya, maka skrip itu berjalan di browser admin saat daftar peserta ditampilkan di dashboard dan bisa mencuri sesi admin. Asumsi: data peserta ditampilkan tanpa di-escape.",
+                  "mitigation": "Escape atau sanitasi semua data sebelum ditampilkan, Content Security Policy, validasi input di Portal web.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "8cea5116-c743-48dd-bbb4-a7e0fb7d1543",
+                  "title": "Dashboard lambat atau tidak bisa diakses saat acara berlangsung",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Jika penyerang atau banyak permintaan sekaligus membebani Dashboard web, maka admin tidak bisa memantau jumlah check-in. Asumsi: dashboard memakai server yang sama dengan Backend tiket.",
+                  "mitigation": "Rate limiting, cache ringkasan data, pisahkan beban dashboard dari proses validasi.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 391,
+              "y": 818
+            },
+            "size": {
+              "width": 80,
+              "height": 70
+            },
+            "attrs": {
+              "text": {
+                "text": "backend \ntiket"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 14,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "53b98767-0dbf-40b2-acf3-3270b9d421ce"
+                },
+                {
+                  "group": "right",
+                  "id": "fa4febe9-4949-4171-b676-331a39d1a935"
+                },
+                {
+                  "group": "bottom",
+                  "id": "245ea4a8-c911-4d03-a503-3999e51bd017"
+                },
+                {
+                  "group": "left",
+                  "id": "3cbbdc3e-716d-472d-bdc1-dc7e1acbafe5"
+                }
+              ]
+            },
+            "id": "8dcf7ee0-1689-4fce-9702-2c94d6d57815",
+            "data": {
+              "type": "tm.Process",
+              "name": "backend \ntiket",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "1018e47b-23b6-453f-be71-5b5ab782d82a",
+                  "title": "Tiket lolos dua kali oleh pemindaian paralel",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika dua petugas di pintu berbeda memindai QR yang sama hampir bersamaan, maka tiket bisa lolos dua kali sebelum status berubah. Asumsi: cek dan update status tidak dalam satu transaksi atomik.",
+                  "mitigation": "Transaksi atomik atau penguncian baris, status check-in unik per tiket.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "aa0c160f-4a89-4028-aef1-8ae594f25f26",
+                  "title": "Peserta mengakses fungsi petugas atau admin",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Jika peserta dapat memanggil endpoint validasi atau dashboard dengan sesi tanpa hak akses, maka ia bisa mengubah status tiket atau melihat data kehadiran. Asumsi: otorisasi hanya dicek di antarmuka.",
+                  "mitigation": "Kontrol akses berbasis peran di server untuk setiap endpoint.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "0eb7b348-3fa1-4b7d-b341-0f5530bbffd1",
+                  "title": "Backend kewalahan saat banyak pintu memindai bersamaan",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Jika penyerang membanjiri Backend tiket dengan permintaan validasi saat acara berlangsung, maka pintu masuk berhenti melayani peserta. Asumsi: tidak ada pembatasan permintaan per sesi petugas.",
+                  "mitigation": "Rate limiting, autentikasi sebelum diproses, kapasitas cadangan, mode darurat check-in manual yang tercatat.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "d7bb7342-1f8b-46f9-b5ff-87693f638ce0",
+                  "title": ": Pemalsuan hasil validasi",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat mengubah respons di jalur jaringan, maka tiket yang ditolak tampak valid di layar petugas. Asumsi: respons tidak ditandatangani dan tidak memakai TLS.",
+                  "mitigation": "TLS, tanda tangan pada respons, tampilkan data peserta untuk verifikasi manual.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                },
+                {
+                  "id": "1c60c6fa-993a-4413-8177-009d34e3a0c0",
+                  "title": "SQL injection pada query tiket",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika penyerang dapat menyisipkan perintah SQL lewat ID tiket atau data registrasi, maka status check-in atau data peserta bisa diubah atau dibaca. Asumsi: query dibuat dengan penggabungan string.",
+                  "mitigation": "Prepared statement atau ORM, validasi input, akun database berhak minimum.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 3,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 673,
+              "y": 828
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "database\ntiket"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 15,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "903d3c59-9f72-48e8-9ea4-1d8883348418"
+                },
+                {
+                  "group": "right",
+                  "id": "f3b538df-d4e0-4150-a05b-12ac8abf64a6"
+                },
+                {
+                  "group": "bottom",
+                  "id": "a3c46b31-26b2-4124-a688-caf4efd5e800"
+                },
+                {
+                  "group": "left",
+                  "id": "11a615b1-8216-42e5-9a6b-fb33a1a09e33"
+                }
+              ]
+            },
+            "id": "d3990b05-1d48-4182-826a-26fabae3d992",
+            "data": {
+              "type": "tm.Store",
+              "name": "database\ntiket",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "bf207ec2-ede2-4e8e-8d82-606b05291992",
+                  "title": "Kebocoran data peserta dari database",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Jika pihak tidak berwenang dapat membaca isi database (backup atau akses langsung), maka identitas peserta dan ID tiket terbuka. Asumsi: data tidak dienkripsi dan akses tidak dibatasi.",
+                  "mitigation": "Enkripsi data tersimpan, akses hanya dari Backend tiket, enkripsi backup.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                },
+                {
+                  "id": "ab6a6d5b-a2a0-4e15-a869-696ac21b2f60",
+                  "title": "Status check-in diubah langsung di database",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Jika pihak internal atau penyerang dapat mengubah kolom status langsung di database, maka tiket bisa dibuat tampak belum atau sudah dipakai. Asumsi: tidak ada audit log perubahan.",
+                  "mitigation": "Audit log perubahan, pembatasan akses tulis hanya untuk backend.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": -70,
+              "y": 460
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "TB 1: perangkat ke portal"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 16,
+            "id": "8c0fc14d-de2a-414f-a3a8-7e5f99bb316b",
+            "data": {
+              "type": "tm.Text",
+              "name": "TB 1: perangkat ke portal",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 240,
+              "y": 450
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "TB 2: aplikasi ke backend"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 17,
+            "id": "ebdc6c72-29d0-4e7c-b1b6-b5ae43e8888b",
+            "data": {
+              "type": "tm.Text",
+              "name": "TB 2: aplikasi ke backend",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 600,
+              "y": 450
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "TB 3: backend ke database"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "zIndex": 18,
+            "id": "41b06664-5cea-466d-9bd5-6af7bdf48e1a",
+            "data": {
+              "type": "tm.Text",
+              "name": "TB 3: backend ke database",
+              "hasOpenThreats": false
+            }
+          }
+        ]
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 3,
     "reviewer": "Dosen pendidikan",
     "threatTop": 21
   }
